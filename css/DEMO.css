@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*CSS Document*/
+:root {
+    --main-color: #CB8161;
+    --box-shadow:0 0 8px rgb(0, 0, 0, 0.3);
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+@font-face {
+    font-family: bodyfont;
+    src: url(Font/Cabin/Cabin-Regular.ttf)
+}
+
+@font-face {
+    font-family: titlefont;
+    src: url(Font/areminiscentsmile/areminiscentsmile-Regular.ttf )
+}
+
+

@@ -1,0 +1,57 @@
+@charset "utf-8";
+/*CSS Document*/
+:root {
+    --main-color: #CB8161;
+    --box-shadow:0 0 4px rgb(0, 0, 0, 0.3);
+   
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    padding: 0;
+
+}
+
+
+
+@font-face {
+    font-family: bodyfont;
+    src: url(Font/Cabin/Cabin-Regular.ttf)
+}
+
+@font-face {
+    font-family: titlefont;
+    src: url(Font/Ogg-Roman.ttf )
+}
+
+#navi .subnav {
+    background-color: white;
+
+  }
+
+  #navi .subnav a {
+    color:black;
+
+  }
+
+  *, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navigation li a::after {
+    position: absolute;
+    content: "";
+    background-color: black;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    transition: 0.5s;
+}
+
+#cart_navi a, #heart_navi a {
+    color: black;
+}

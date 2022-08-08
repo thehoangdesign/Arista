@@ -1,0 +1,483 @@
+@charset "utf-8";
+/*CSS Document*/
+:root {
+    --main-color: #CB8161;
+    --box-shadow:0 0 8px rgb(0, 0, 0, 0.3);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+
+}
+
+@font-face {
+    font-family: bodyfont;
+    src: url(Font/Cabin/Cabin-Regular.ttf)
+}
+
+@font-face {
+    font-family: titlefont;
+    src: url(Font/Ogg-Roman.ttf )
+}
+
+.icon_style {
+    margin-left: 3px;
+    font-size: 1rem;
+    margin-top: 2px;
+}
+
+/* ======================Navi ==================== */
+#bgnavi {
+    background-color: #fff;
+    box-shadow: 0 0 8px rgb(0, 0, 0, 0.3);
+    
+        position: sticky;
+        /* top: 0; */
+        width: 100%;
+        display: block;
+        transition: top 0.3s;
+       
+
+}
+
+#navi ul li a {
+   color: black;
+   
+ }
+
+ #icons div.heart, #icons div.cart, #hamberger, #search_navi {
+    color: black;
+
+}
+
+/* =====================Call to action ==================== */
+#contact_calltoaction p {
+    color: #fff;
+    height: 60px;
+    line-height: 60px;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: bodyfont;
+  
+
+}
+#contact_calltoaction {
+  background-color: #000;
+  
+}
+
+/* Pattern */
+
+.pattern {
+    text-align: center;
+    
+}
+
+/* Keep in tough */
+.kit_title {
+    font-family: titlefont;
+    text-align: center;
+}
+
+.kit_text  {
+    font-family: bodyfont;
+    text-align: center;
+}
+
+/* Keep in tough */
+
+#sendingmessage_email, #sendingmessage_name,#sendingmessage_phone{
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border: #000 0.5px solid;
+    margin-bottom: 1rem;
+    font-family: bodyfont;
+    padding-left: 10px;
+    font-family: bodyfont;
+}
+
+#sendingmessage_text {
+    width: 100%;
+    height: 200px;
+    background: #fff;
+    border: #000 0.5px solid;
+    margin-bottom: 1rem;
+    font-family: bodyfont;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: bodyfont;  
+    color: #757575;
+}
+
+.contact_sendmessage {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* another way */
+#contact_abotherway p, .contact_icon {
+    text-align: center;
+    color: #fff;
+}
+
+.contact_icon i{
+font-size: 3rem;
+margin-top: 30px;
+margin-bottom: 10px;
+}
+
+.contact_abotherway-1 {
+    background-color: #000;
+   margin: 0 5px;
+}
+
+.contact_heading {
+    margin-top: 1rem;
+    font-size: 2.215rem;
+    font-family: titlefont;
+    margin-top: 5px;
+}
+
+.contact_sunheading {
+    font-size: 1rem;
+    font-family: bodyfont;
+}
+
+a.explore_btn3 { 
+
+    box-sizing: border-box;
+    /* border: 0.5px solid white; */
+    color: white;
+    /* background-color: white; */
+    font-family: bodyfont;
+    border: 1px solid white;
+    font-size: 1rem;
+    text-decoration: none;  
+    padding: 1rem 2rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+
+
+#contact_abotherway {
+    margin-top: 40px 0;
+}
+#contact_abotherway .row  {
+   justify-content: center;
+}
+
+#location_aboutus iframe {
+    margin-top: 35px;
+    
+    
+}
+#contact_mapp {
+    padding: 0;
+margin: 60px 0;
+}
+#contact_mapp img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+/* ==================================Xl================================ */
+@media (min-width: 1200px){
+
+    /* callto action */
+    #contact_calltoaction p {
+      font-size: 1rem;
+    
+    }
+
+    /* Pattern */
+
+.pattern {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* Keep in tough */
+.kit_title {
+    font-size:3.215rem;
+    font-family: titlefont;
+    text-align: center;
+}
+
+.kit_text  {
+    font-family: bodyfont;
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    padding: 0 10rem;
+}
+
+/* Keep in tough */
+#sendingmessage_form {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+/* anotherway */
+.contact_abotherway-1  {
+    max-width: 32%;
+
+}
+
+/* hover btn */
+
+a.explore_btn3:hover {
+    background-color: white;
+    color: black;
+
+}
+
+
+
+
+
+
+
+
+
+
+    
+    }
+/* ==================================LG================================ */
+
+    
+    @media (max-width: 1199px) and (min-width: 992px){
+        #bgbanner {
+            height: 500px;
+            background-color: #000;
+        }
+         /* callto action */
+    #contact_calltoaction p {
+        font-size: 1rem;
+      
+      }
+
+         /* Pattern */
+
+.pattern {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* Keep in tough */
+.kit_title {
+    font-size:3rem;
+    font-family: titlefont;
+    text-align: center;
+}
+
+.kit_text  {
+    font-family: bodyfont;
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    padding: 0 8rem;
+}
+
+/* Keep in tough */
+#sendingmessage_form {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.contact_abotherway-1  {
+    max-width: 31%;
+}
+
+
+
+    
+
+
+
+
+
+
+    }
+/* ==================================MD================================ */
+
+    
+    @media (max-width: 992px) and (min-width: 768px){
+        #bgbanner {
+            height: 500px;
+            background-color:violet;
+        }
+ /* callto action */
+ #contact_calltoaction p {
+    font-size: 0.8rem;
+  
+  }
+
+     /* Pattern */
+
+.pattern {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+/* Keep in tough */
+.kit_title {
+    font-size:2.215rem;
+    font-family: titlefont;
+    text-align: center;
+}
+
+.kit_text  {
+    font-family: bodyfont;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding: 0 5rem;
+}
+
+/* Keep in tough */
+#sendingmessage_form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.contact_abotherway-1  {
+    max-width: 30%;
+    margin-bottom: 1rem;
+}
+
+
+    
+
+
+
+
+    }
+
+/* =================================SM=============================== */
+
+    
+    @media (max-width: 768px) and (min-width: 576px){
+        #bgbanner {
+            height: 500px;
+            background-color: red;
+        }
+/* callto action */
+#contact_calltoaction p {
+    font-size: 0.8rem;
+  
+  }
+
+       /* Pattern */
+
+.pattern {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Keep in tough */
+.kit_title {
+    font-size:2rem;
+    font-family: titlefont;
+    text-align: center;
+}
+
+.kit_text  {
+    font-family: bodyfont;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding: 0 3rem;
+}
+
+/* Keep in tough */
+#sendingmessage_form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.contact_abotherway-1  {
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+    }
+/* ==================================small================================ */
+
+    @media (max-width: 575px){
+        #bgbanner {
+            height: 500px;
+            background-color: blue;
+        }
+/* callto action */
+#contact_calltoaction p {
+    font-size: 0.8rem;
+  
+  }
+
+         /* Pattern */
+
+.pattern {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Keep in tough */
+.kit_title {
+    font-size:1.75rem;
+    font-family: titlefont;
+    text-align: center;
+}
+
+/* Keep in tough */
+#sendingmessage_form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.contact_abotherway-1  {
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+    }
+
+        /* Turn off relative positioning */
+ /* #bgnavi {
+    position: static;
+ } */

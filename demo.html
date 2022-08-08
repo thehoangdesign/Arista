@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/DEMO.css">
+</head>
+<body>
+
+  <div class="detail_tab">
+    <p class="tablink" onclick="openPage('Description', this, '')">Description</p>
+    <p class="tablink" onclick="openPage('Information', this, 'n')" id="defaultOpen">Additional information </p>
+   
+    <p class="tablink" onclick="openPage('Ship', this, '')">Shipping & Delivery</p>
+    
+    <div id="Description" class="tabcontent">
+      <h3>Home</h3>
+      <p>Home is where the heart is..</p>
+    </div>
+    
+    <div id="Information" class="tabcontent">
+      <h3>News</h3>
+      <p>Some news this fine day!</p> 
+    </div>
+    
+    
+    <div id="Ship" class="tabcontent">
+      <h3>About</h3>
+      <p>Who we are and what we do.</p>
+    </div>
+  </div>
+
+<span class="hellonhe">Hello</span>
+
+
+
+  
+
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 

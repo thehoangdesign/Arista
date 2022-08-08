@@ -1,0 +1,811 @@
+@charset "utf-8";
+/*CSS Document*/
+:root {
+    --main-color: #CB8161;
+    --box-shadow:0 0 8px rgb(0, 0, 0, 0.3);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+
+}
+
+@font-face {
+    font-family: bodyfont;
+    src: url(Font/Cabin/Cabin-Regular.ttf)
+}
+
+@font-face {
+    font-family: titlefont;
+    src: url(Font/Ogg-Roman.ttf )
+}
+
+.icon_style {
+    margin-left: 3px;
+    font-size: 1rem;
+    margin-top: 2px;
+}
+
+
+/* ==========================banner============== */
+
+#navi ul li a {
+    color: black;
+}
+
+#icons div.heart, #icons div.cart, #hamberger, #search_navi {
+    color: black;
+}
+
+#cart_navi a , #heart_navi a {
+    color: black;
+  }
+
+#aboutus_banner {
+    
+    background-size: cover;
+    background-image: url(img/aboutus/slider-10-9.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.aboutus_content {
+    color: black;
+    text-align: center;
+    position:absolute;
+    /* transform: translateX(-40%); */
+
+}
+.aboutus_heading {
+    font-family: titlefont;
+    
+}
+
+.aboutus_subheading {
+    font-family: bodyfont;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: -20px;
+}
+
+hr.horiline {
+    /* color: black; */
+    width: 50%;
+    border-top: black 2px solid;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Pattern */
+
+.pattern {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+/* Quote */
+
+.aboutus_quote p {
+
+    font-family: titlefont;
+    text-align: center;
+}
+
+/* ================HIstory============= */
+
+p.history_heading {
+
+    font-family: titlefont;
+    
+}
+
+.history_subheading {
+    font-family: bodyfont;
+    font-size: 1rem;
+}
+
+#row1, #row2 {
+    margin-bottom: 2rem;
+    padding: 0;
+}
+
+#row1 img , #row2 img {
+    width: 100%; 
+    padding: 0;
+}
+
+
+.history_text, .history_text2 {
+    padding: 0;
+}
+
+/* ================Goals============= */
+.goals_title,
+.goals_heading {
+    font-family: titlefont;
+    
+}
+
+ .goals_subtitle {
+    font-family: bodyfont;
+    font-size: 1rem;
+}
+
+
+
+#aboutus_goals img {
+    width: 100%;
+}
+
+/* ===============Inspired 1============= */
+.inspired_pic1 img {
+    width: 100%;
+    padding: 0px;
+}
+
+.inspired_pic1 {
+    padding: 0px;
+}
+
+#aboutus_inspired {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+     
+/* ===============Inspired 2============= */
+
+
+
+.inspired2_pic img , .inspired2_pic2 img{
+    width: 100%;
+}
+
+/* =================Team member============= */
+#teammembers p.goals_heading {
+    text-align: center;
+margin-bottom: 40px;
+}
+
+#teammembers p.goals_title {
+    margin-top: 20px;
+}
+
+
+#teammembers p.temmembers_subtitle {
+    margin-top: -10px;
+    font-size: 1rem;
+    font-family: bodyfont;
+    color:#9e9e9e ;
+}
+#teammembers {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.member_pic img{
+    width: 100%;
+}
+
+/* =====================Social============= */
+
+#aboutus_our p.goals_heading {
+    text-align: center;
+margin-bottom: 10px;
+}
+
+.goals_subheading {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: bodyfont;
+    font-size: 1.5rem;
+}
+
+#aboutus_our p.goals_title {
+    margin-top: 20px;
+ }
+ 
+ #aboutus_our p.goals_subtitle {
+    margin-top: -10px;
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------FOOTER----------*/
+
+/*----------XL----------*/
+
+@media (min-width: 1200px){
+
+    /* Aboutus - banner*/
+    #aboutus_banner {
+        height: 800px;
+        
+    }
+
+    .aboutus_content {
+
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .aboutus_heading {
+        font-size: 5rem;
+    }
+
+    /* Quote */
+
+.aboutus_quote {
+    padding: 0 6rem;
+
+}
+
+.aboutus_quote p {
+
+    font-family: titlefont; 
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* ================HIstory============= */
+#row1, #row2 {
+    position: relative;
+}
+.history_text {
+    background-color:rgb(255, 255, 255);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
+    height: 260px;
+    padding: 10px 15px;
+    position: absolute;
+    top: 34px;
+    right: 20%;
+    
+}
+p.history_heading {
+    font-size: 2.215rem;
+    font-family: titlefont;
+    margin-bottom: -1px;
+}
+
+.history_subheading {
+    font-family: bodyfont;
+    font-size: 1rem;
+}
+
+/* History row 2 */
+
+.history_text2 {
+    background-color:rgb(255, 255, 255);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
+    height: 200px;
+    padding: 10px 15px;
+    position: absolute;
+    top: 39px;
+    left: 20%;
+    z-index: 1;
+    
+}
+
+
+#aboutus_history {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* ========================Goals============= */
+.goals_title {
+font-size: 2.125rem;
+
+}
+
+.goals_heading {
+    font-size: 3.3rem;
+    line-height: 65px;
+
+    
+}
+
+.goals_pic2 {
+    margin-top: 15%;
+}
+
+/* inspired */
+#aboutus_inspired {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* Inspired 2 */
+#aboutus_inspired2 {
+    position: relative;
+}
+
+.inspired2_pic2 {
+position: absolute;
+right: 30px;
+top: -165px;
+}
+
+/* teammembers */
+#teammembers {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+
+
+
+
+    
+
+
+
+
+    
+    }
+
+
+
+
+
+/*----------LG----------*/
+    
+    @media (max-width: 1200px) and (min-width: 992px){
+
+
+        /* Banner */
+        #aboutus_banner {
+            height: 500px;
+            
+        }
+
+        .aboutus_content {
+
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    
+        .aboutus_heading {
+            font-size: 5rem;
+        }
+
+           /* Quote */
+
+.aboutus_quote p {
+
+    font-family: titlefont; 
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 4rem;
+}
+
+/* ================HIstory============= */
+#row1, #row2 {
+    position: relative;
+}
+.history_text {
+    background-color:rgb(255, 255, 255);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
+    height: 190px;
+    
+    padding: 10px 15px;
+    position: absolute;
+    top: 34px;
+    right: 16%;
+    
+}
+p.history_heading {
+    font-size: 1.5rem;
+    font-family: titlefont;
+    margin-bottom: 2px;
+}
+
+.history_subheading {
+    font-family: bodyfont;
+    font-size: 1rem;
+}
+
+/* History row 2 */
+
+.history_text2 {
+    background-color:rgb(255, 255, 255);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
+    height: 190px;
+    padding: 10px 15px;
+    position: absolute;
+    top: 34px;
+    left: 16%;
+    z-index: 1;
+    
+}
+    
+
+#aboutus_history {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+/* ========================Goals============= */
+.goals_title {
+    font-size: 2rem;
+    
+    }
+    
+    .goals_heading {
+        font-size: 3.2rem;
+        line-height: 65px;
+    
+        
+    }
+    
+    .goals_pic2 {
+        margin-top: 15%;
+    }
+
+    /* inspired */
+    #aboutus_inspired {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    /* Inspired 2 */
+#aboutus_inspired2 {
+    position: relative;
+}
+
+.inspired2_pic2 {
+position: absolute;
+right: 30px;
+top: -115px;
+}
+
+
+
+
+
+
+
+
+    }
+
+
+/*----------MD----------*/
+
+    
+    @media (max-width: 992px) and (min-width: 768px){
+
+        /* Banner */
+        #aboutus_banner {
+            height: 500px;
+            
+        }
+         
+        .aboutus_content {
+
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    
+        .aboutus_heading {
+            font-size: 3.75rem;
+        }
+
+
+             /* Quote */
+
+.aboutus_quote p {
+
+    font-family: titlefont; 
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+/* ================HIstory============= */
+
+p.history_heading {
+    font-size: 1.3rem;
+    font-family: titlefont;
+    
+}
+
+.history_subheading {
+    font-family: bodyfont;
+    font-size: 1rem;
+}
+
+.history_text, .history_text2 {
+    padding: 0;
+}
+
+#aboutus_history {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+/* ========================Goals============= */
+.goals_title {
+    font-size: 2rem;
+    
+    }
+    
+    .goals_heading {
+        font-size: 3rem;
+        line-height: 65px;
+    
+        
+    }
+    
+    .goals_pic2 {
+        margin-top: 13%;
+    }
+
+    #aboutus_goals {
+        padding: 0;
+    }
+
+    .inspired_text {
+        padding-left: 40px;
+    }
+
+        /* Inspired 2 */
+#aboutus_inspired2 {
+    position: relative;
+}
+
+.inspired2_pic2 {
+position: absolute;
+right: 10px;
+
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+/*----------Sm----------*/
+
+    
+    @media (max-width: 767px) and (min-width: 576px){
+
+        /* Banner */
+        #aboutus_banner {
+            height: 500px;
+           
+        }
+
+        .aboutus_content {
+
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    
+        .aboutus_heading {
+            font-size: 3.75rem;
+        }
+
+                     /* Quote */
+
+.aboutus_quote p {
+
+    font-family: titlefont; 
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+/* ================HIstory============= */
+
+p.history_heading {
+    font-size: 2rem;
+    font-family: titlefont;
+    
+}
+
+.history_subheading {
+    font-family: bodyfont;
+    font-size: 1rem;
+}
+
+#row1, #row2 {
+    justify-content: center;
+}
+
+.history_pic2, .history_pic1 {
+    padding: 0;
+}
+
+.history_text {
+    margin-top: 1rem;
+}
+#aboutus_history {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* ========================Goals============= */
+
+
+.goals_title {
+    font-size: 2rem;
+    
+    }
+    
+    .goals_heading {
+        font-size: 3rem;
+        line-height: 65px;
+    
+        
+    }
+    
+    .goals_pic2 {
+        margin-top: 13%;
+    }
+
+    #aboutus_goals {
+        padding: 0;
+    }
+
+    /* inspired */
+ 
+ .inspired_pic1 {
+    /* padding: 4px; */
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+/*----------sMall----------*/
+
+     
+    @media (max-width: 576px) and (min-width: 320px){
+
+        /*  Banner */
+        #aboutus_banner {
+            height: 300px;
+            background-color: blue;
+        }
+
+        .aboutus_content {
+
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    
+        .aboutus_heading {
+            font-size: 2.4rem;
+        }
+/* Quote */
+
+.aboutus_quote p {
+
+    font-family: titlefont; 
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+/* ================HIstory============= */
+
+p.history_heading {
+    font-size: 2rem;
+    font-family: titlefont;
+    
+}
+
+.history_subheading {
+    font-family: bodyfont;
+    font-size: 1rem;
+}
+
+#row1, #row2 {
+    justify-content: center;
+}
+
+.history_pic2, .history_pic1 {
+    padding: 0;
+}
+
+.history_text {
+    margin-top: 1rem;
+}
+
+#aboutus_history {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* ============Goals============ */
+
+.goals_title {
+    font-size: 1.3rem;
+    
+    }
+    
+    .goals_heading {
+        font-size: 2.5rem;
+        line-height: 65px;
+    
+        
+    }
+    
+    .goals_pic2 {
+        margin-top: 13%;
+    }
+ 
+     /* inspired */
+ 
+ .inspired_pic1 img {
+    padding: 15px;
+}
+
+
+
+
+    }
+
+          /*Apply styles after scroll*/
+          .scrolling-active{
+            background-color:white;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .scrolling-active .nav{
+            height: 88px;
+        }
+
